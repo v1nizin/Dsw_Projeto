@@ -20,7 +20,8 @@ export default {
 };
 </script>
 <template>
-  <h1>Adicionado recentemente</h1>
+  <div class="Add"><h1>Adicionado recentemente</h1></div>
+  
 <div class="Flex">
   <div class="conteudo">
     <PictureCard
@@ -32,4 +33,10 @@ export default {
   </div>
     </div> 
 </template>
+<style>
+.Add{
+  text-align: center;
+  margin-top: 5px;
+}
+</style>
 

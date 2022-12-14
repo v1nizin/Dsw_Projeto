@@ -27,7 +27,7 @@ export default {
 </script>
 <template>
 
-  <div>
+  <div class="Filtro">
     <label for="Filtros"></label>
     <select v-model="genero" @change="go" class="">
       <option value="" disabled>Categorias</option>
@@ -38,7 +38,14 @@ export default {
   </div>
 
   <div>
+    
     <ImgsComp></ImgsComp>
   </div>
 
 </template>
+<style>
+.Filtro{
+  text-align: center;
+  margin-top: 50px;
+}
+</style>

@@ -20,68 +20,55 @@ export default {
 }
 </script>
 <template>
-  <div class="descMovi"></div>
-    <div>
-      <div class="titulo2">{{ serie.name}}</div>
+    <div class="descMovi10">
       <img
-        class="poster-filme-pag"
-        :src="getPosterUrl(serie.poster_path)"
-        
+      class="poster-filme-pag"
+      :src="getPosterUrl(serie.poster_path)"
       />
-    </div>
-      <div class="descMovi">
-        <h1>Sinopse:</h1>
-        {{ serie.overview}}
+      <div class="descMovi11">
+        <h1 class="titulo2">{{ serie.name}}</h1>
+        <div class="descMovi9">
+          <h1>Sinopse:</h1>
+          <p>
+            {{ serie.overview}}
+          </p>
+        </div>
+        <div class="descMovi8">
+          <h3>Lançamento: {{ serie.first_air_date}}</h3>
       </div>
-      <div class="descMovi2">
-        <h3>Lançamento: {{ serie.first_air_date}}</h3>
-    </div>
-    <div class="descMovi">
-
-        <h3>Temporadas: {{serie.number_of_seasons}}</h3>
-    </div>
-      <div class="descMovi3">
-        <h3>Avaliação dos usuários: {{ Math.round(serie.vote_average) }}</h3>
+      <div class="descMovi7">
+          <h3>Temporadas: {{serie.number_of_seasons}}</h3>
       </div>
-     
+        <div class="descMovi7">
+          <h3>Avaliação dos usuários: {{ Math.round(serie.vote_average) }}</h3>
+        </div>
+      </div>
+    </div>
       
       
 </template>
 
 <style>
-.descMovi {
-  color: white;
+.descMovi11 {
   display: flex;
-  padding: 2vh;
-  font-size: vh;
-  margin-top: -30vh;
-  float: right;
-  margin-right: 60vh;
-
+  padding: 41px;
+  flex-direction: column;
 }
-.descMovi2 {
-  color: white;
+.descMovi10{
   display: flex;
-  padding: 2vh;
-  font-size: 2vh;
-  margin-top: -20vh;
-  float: right;
-  margin-right: 136vh;
+  padding: 41px;
 }
-.descMovi3 {
+.descMovi9 {
   color: white;
-  display: flex;
-  padding: 2vh;
-  font-size: 1,3vh;
-  margin-top: -10vh;
-  float: right;
-  margin-right: 136vh;
+  margin-top: 5px;
+}
+.descMovi8 {
+  color: white;
+}
+.descMovi7 {
+  color: white;
   }
 
-.titulo2 {
-    margin-top: 8vh;
-    color: white;
-}
 
 
 </style>
